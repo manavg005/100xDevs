@@ -1,0 +1,40 @@
+*{
+    font-family: 'Inter', serif;
+    color: #424242;
+    margin: 0;
+}
+.top-navbar{
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center;
+    padding: 24px;
+}
+
+.tablinks{
+    padding-left: 40px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #666666;
+}
+
+
+
+
+button{
+    padding: 10px 15px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #387ED1;
+    border: none;
+    border-radius: 3px;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+p{
+    font-size: 20px;
+}

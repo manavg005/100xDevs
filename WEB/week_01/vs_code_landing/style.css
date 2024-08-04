@@ -1,6 +1,7 @@
 * {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
     color:#fff;
+    margin: 0px;
 }
 
 .toplinks{
@@ -10,9 +11,13 @@
     text-decoration: none;
 }
 
+a:hover{
+  color: #fff;
+}
+
 input{
     color: #fff;
-    padding: 7px 10px;
+    padding: 7px 25px;
     margin-right: 2px;
     border-radius: 4px;
     border: 0.1px solid #9ba3b4;
@@ -100,6 +105,7 @@ border-radius: 25px;
   .code-any-lang p{
     font-size: 15px;
     line-height: 160%;
+    color: #9ba3b4;
   }
   
   .lang-container {
