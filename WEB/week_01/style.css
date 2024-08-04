@@ -1,0 +1,134 @@
+* {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    color:#fff;
+}
+
+.toplinks{
+    padding-left: 20px;
+    cursor:pointer;
+    color: #9ba3b4;
+    text-decoration: none;
+}
+
+input{
+    color: #fff;
+    padding: 7px 10px;
+    margin-right: 2px;
+    border-radius: 4px;
+    border: 0.1px solid #9ba3b4;
+    background-color:#0e0e0e;
+}
+
+#d-btn{
+    background-color: #0078D4;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    padding: 8px 16px;
+}
+
+#d-btn2{
+    background-color: #0078D4;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    padding: 12px 24px;
+    font-size: 20px;
+}
+
+#link{
+    color: #0078D4;
+}
+
+.message{
+    color: #9ba3b4;
+    text-align: center;
+    font-size: 15px;
+}
+
+#round-border{
+    border:1px solid rgba(255, 255, 255, 0.07);
+    background-color: rgba(255, 255, 255, 0.04);
+border-radius: 25px;
+    padding: 10px 0px;
+}
+
+.largetxt {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px; /* Adjust the spacing as needed */
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 100px;
+    align-items: center;
+    
+  }
+  
+  .large-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+
+  .dark-container {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: flex-start;  */
+    padding: 100px;
+  }
+  
+  .code-any-lang {
+    flex: 1; /* Allow this to take up remaining space */
+    max-width: 50%; /* Set a max-width for better control */
+    color: white;
+    padding-right: 100px;
+  }
+
+  .code-any-lang p{
+    font-size: 15px;
+    line-height: 160%;
+  }
+  
+  .lang-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Allow wrapping to handle more items */
+    gap: 20px; /* Space between columns */
+    flex: 2; /* Allow this to take more space */
+  }
+  
+  .lang-column {
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between items in the same column */
+  }
+  
+  .lang-item {
+    display: flex;
+    align-items: center; /* Align image and text */
+    gap: 10px; /* Space between image and text */
+  }
+  
+  .lang-item img {
+    width: 40px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .lang-item code {
+    color: white;
+  }
+  
