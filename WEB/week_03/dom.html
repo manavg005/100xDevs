@@ -1,0 +1,64 @@
+<html>
+  <title>Dom</title>
+  <body>
+    <div class="new"></div>
+    <h1>Hello There</h1>
+    <input type="text" />
+    <button onclick="addTodo()">Add</button>
+    <button onclick="deleteLast()">Delete Last</button>
+    <button onclick="deleteFirst()">Delete First</button>
+  </body>
+  <script>
+    let todos = []
+    let ctr=1;
+
+    function addTodo() {
+      todos.push({ id: ctr, title: document.querySelector("input").value });
+      ctr++
+      render();
+      document.querySelector("input").value=""
+    }
+
+    function render() {
+        document.querySelector(".new").innerHTML=''
+        for (let i = 0; i < todos.length; i++) {
+        const element = todoComponent(todos[i])
+        document.querySelector(".new").appendChild(element);
+        }
+    }
+
+    function todoComponent(todo) {
+        const divEl = document.createElement("div");
+        const h4 = document.createElement("h4");
+        const buttonEl = document.createElement('button')
+        h4.innerHTML=todo.title
+        divEl.appendChild(h4);
+        buttonEl.innerHTML = "Delete"
+        buttonEl.setAttribute("id",todo.id)
+        buttonEl.addEventListener("click", function () {
+        deleteTodo(todo.id);
+      });
+        divEl.appendChild(buttonEl);
+      return divEl
+    }
+
+    
+
+    function deleteLast(){
+        todos.splice(todos.length-1,1)
+        render();
+    }
+
+    function deleteFirst(){
+        todos.splice(0,1)
+        render();
+    }
+
+    function deleteTodo(id) {
+      todos = todos.filter(todo => todo.id !== id);
+      render();
+    }
+
+   
+  </script>
+</html>

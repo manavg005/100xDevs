@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body >
+  <p id="myP">   This element has extra spacing     and contains <span>a span element</span>.</p>
+
+  <h1>Todo list</h1>
+  <div id="body">
+    <div id="todo-1">
+      <h4 >1. Take class</h4>
+      <button  onClick='onDelete(1)'>Delete</button>
+    </div>
+
+    <div id="todo-2">
+      <h4 >2. Go to gym</h4>
+      <button  onClick='onDelete(2)'>Delete</button>
+    </div>
+
+  </div>
+
+  <div>
+    <input type="text"></input>
+    <button onclick="addTodo()">Add Todo</button>
+  </div>
+  <script>
+    let text1 = document.getElementById("myP").innerText;
+    console.log(text1);
+    let text2 = document.getElementById("myP").innerHTML;
+    console.log(text2);
+    let text3 = document.getElementById("myP").textContent;
+    console.log(text3);
+    
+    const inputEl = document.querySelector('input');
+    const bodyEl = document.querySelector('#body');
+    let ctr = 3;
+
+
+    function addTodo() {
+      if (inputEl.value !== "") {
+        const divEl = document.createElement('div');
+        divEl.setAttribute("id", `todo-${ctr}`)
+        divEl.innerHTML = `<h4>${inputEl.value}<h4><button  onClick='onDelete(${ctr})'>Delete</button>`
+
+        bodyEl.appendChild(divEl)
+
+        ctr = ctr + 1;
+        inputEl.value = ""
+      }
+    }
+
+    function onDelete(index) {
+      const element = document.getElementById("todo-" + index);
+      bodyEl.removeChild(element);
+    }
+
+
+  </script>
+</body>
+
+</html>
