@@ -1,0 +1,3 @@
+Hi this is the file read file to count the number of words
+sdsd
+dsdds sdsdd ds
