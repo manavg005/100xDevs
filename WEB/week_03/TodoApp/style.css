@@ -1,0 +1,35 @@
+*{
+    background-color: #2e2c2c;
+    margin: 0px;
+}
+
+#main-container{
+    display: flex;
+    justify-content: center;
+}
+
+#top-container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 50px;
+    background-color: gray;
+}
+
+input{
+    background-color: #fff;
+    border-color: transparent;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#add-btn{
+    color: aliceblue;
+    background-color: red;
+}
